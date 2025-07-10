@@ -1,0 +1,285 @@
+/* PRINCIPAL */
+:root {
+    --primary-color: #6A00FE;
+    --secondary-color: #F2EAE1;
+    --terciary-color: #B600FE;
+    --text-color: #000000;
+    --backgrounds: #FFFFFF;
+    --borders: #D1D1D1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+}
+
+/* BARRA DE NAVEGACIÓN IZQUIERDA */
+.bar-nav{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    gap: 10px;
+}
+
+.h2-titulo{
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.bar-nav img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.bar-nav button{
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.icono{
+    width: 17px;
+    height: 17px;
+    fill: var(--text-color);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main{
+    display: flex;
+}
+
+/* SIGNUP FORM */
+#signup-form{
+    align-self: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--backgrounds);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+#signup-form input{
+    padding: 10px;
+    border: 1px solid var(--borders);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#signup-form input:focus{
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+#signup-form button{
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--backgrounds);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Users list */
+.users-content{
+    width: 100%;
+    padding: 40px;
+}
+.users-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.users-title div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.users-title button{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--backgrounds);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icn-userslist{
+    width: 20px;
+    height: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-right: 8px;
+}
+.img-userslist{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+.users-content table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.users-content th{
+    border-top: 1px solid var(--borders);
+    text-align: left;
+    color: var(--borders);
+    padding-block: 15px;
+    font-size: 12px;
+}
+.users-content td{
+    font-size: 14px;
+    text-align: left;
+    padding-block: 30px;
+}
+.users-content tr:hover{
+    background-color: var(--secondary-color);
+}
+.users-list tr>td:first-child{
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+.profile-photo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 5px;
+}
+.users-list tr>td:last-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.user-topbar{
+    height: 60px;
+    width: 100%;
+}
+.users-topbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.users-topbar img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.users-topbar div{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.users-topbar input{
+    padding: 10px;
+    border: 1px solid var(--borders);
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--borders)
+}
+
+/* New User */
+
+.newuser-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 50px;
+    align-self: center;
+    gap: 30px;
+}
+
+.newuser-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+.newuser-container input{
+    padding: 10px;
+    border: 1px solid var(--borders);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.newuser-form>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newuser-container button{
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--backgrounds);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 40%;
+}
+
+.newuser-form div button:first-child{
+    background-color: var(--borders);
+    color: var(--text-color);
+}
