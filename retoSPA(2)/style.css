@@ -1,0 +1,324 @@
+:root {
+    --primary-color: #6A00FE;
+    --secondary-color: #E042F8;
+    --backgrounds: #F2EAE1;
+    --black: black;
+    --white: white;
+    --gray: #C4C4C4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+}
+
+/* Lateral bar */
+.mainv-lateralbar {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--backgrounds);
+}
+
+.mainv-title {
+    font-size: 20px;
+    border-left: 3px solid var(--secondary-color);
+    padding: 0 0 0 10px;
+    margin: 15px 0 0px 0;
+    text-shadow:
+        -1px -1px 0 var(--secondary-color),
+        1px -1px 0 var(--secondary-color),
+        -1px 1px 0 var(--secondary-color),
+        1px 1px 0 var(--secondary-color);
+    font-weight: 700;
+}
+
+.mainv-lateralbar-titles{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainv-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.mainv-titleii{
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.mainv-titleiii{
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 500;
+}
+
+.mainv-lateralbar nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.mainv-lateralbar nav a{
+    display: flex;
+    text-decoration: none;
+    padding-block: 5px;
+    width: 70%;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mainv-lateralbar nav a:focus{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.mainv-lateralbar button{
+    margin-bottom: 20px;
+    align-self: center;
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    background-color: transparent;
+    border: none;
+}
+
+/* SIGNUP FORM */
+.sign-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    height: fit-content;
+    margin-block: 20vh;
+    width: fit-content;
+    justify-self: center;
+}
+
+.sign-form input{
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.sign-form input:focus{
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.sign-form button{
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--backgrounds);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Users list */
+.users-content{
+    padding: 40px;
+}
+.users-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.users-title div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.users-title button{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--backgrounds);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.users-title i{
+    font-size: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.users-list tr td:last-child i{
+    font-size: 15px;
+    color: var(--primary-color);
+    cursor: pointer;
+    
+}
+.users-list tr td:first-child i{
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    color: var(--gray);
+    padding-inline: 20px;
+}
+.users-content table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.users-content th{
+    border-top: 1px solid var(--borders);
+    text-align: left;
+    color: var(--borders);
+    padding-block: 15px;
+    font-size: 12px;
+}
+.users-content td{
+    font-size: 14px;
+    text-align: left;
+    padding-block: 30px;
+}
+.users-content tr:hover{
+    background-color: var(--backgrounds);
+}
+.users-list tr>td:first-child{
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+.profile-photo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 5px;
+}
+.users-list tr>td:last-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.user-topbar{
+    height: 60px;
+    width: 100%;
+}
+.users-topbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.users-topbar i{
+    color: var(--gray);
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.users-topbar div{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.users-topbar input{
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--borders)
+}
+.users-topbar input:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+/* New User */
+
+.newuser-container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+    gap: 30px;
+    /* background-color: var(--backgrounds); */
+    width: fit-content;
+    border-radius: 10px;
+    padding: 30px;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.newuser-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+.newuser-container input{
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.newuser-container input:focus{
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.newuser-container h2{
+    text-align: center;
+}
+
+.newuser-icnprofile{
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    background-color: var(--gray);
+    padding: 40px;
+    border-radius: 70px;
+}
+
+.newuser-form>div{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.newuser-container button{
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--backgrounds);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.newuser-form div button:first-child{
+    background-color: var(--borders);
+    color: var(--text-color);
+}
